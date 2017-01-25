@@ -285,6 +285,13 @@ export default Ember.Component.extend(InboundActionsMixin, {
      */
     scrollTop() {
       this.scrollToPosition(0);
+    },
+
+    /**
+     * Can be called when the scroll area should be scrolled manually
+     */
+    scrollToPosition(offset) {
+      this.scrollToPosition(offset);
     }
   }
 });
