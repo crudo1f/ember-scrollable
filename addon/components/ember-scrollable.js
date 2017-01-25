@@ -284,7 +284,7 @@ export default Ember.Component.extend(InboundActionsMixin, {
      * Scroll Top action should be called when when the scroll area should be scrolled top manually
      */
     scrollTop() {
-      this.set('scrollTo', 0);
+      this.scrollToPosition(0);
     }
   }
 });
